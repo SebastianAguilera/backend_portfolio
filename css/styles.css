@@ -63,3 +63,44 @@ body {
 section h1 {
   color: #333;
 }
+
+/* Botón de menú (hamburguesa) */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Cuando el menú está abierto en celular */
+.sidebar.open {
+  left: 0;
+}
+
+/* Responsive para celular */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding-top: 2rem;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+}
