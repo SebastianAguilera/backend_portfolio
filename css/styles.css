@@ -52,8 +52,12 @@ body {
   flex-grow: 1;
 }
 
-section {
-  margin-bottom: 60px;
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
 }
 
 section h1 {
