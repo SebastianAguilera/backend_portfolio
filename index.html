@@ -1,50 +1,68 @@
 <!DOCTYPE html>
+
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aguilera Sebastián | Backend Developer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
+
   <body>
-    <div class="container">
-      <button id="menu-toggle" class="menu-toggle">☰</button>
-      <!-- Sidebar -->
-      <nav class="sidebar">
-        <h2>Sebastián</h2>
-        <ul>
-          <li><a href="#" data-section="sobre-mi">Sobre mí</a></li>
-          <li><a href="#" data-section="curriculum">Currículum</a></li>
-          <li><a href="#" data-section="proyectos">Proyectos</a></li>
-          <li><a href="#" data-section="contacto">Contacto</a></li>
+    <header class="navbar">
+      <div class="logo">Aguilera Sebastián</div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#about-me">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
+    </header>
 
-      <!-- Contenido -->
-      <main class="content">
-        <section id="sobre-mi" class="section active">
-          <h1>Sobre mí</h1>
-          <p>Hola! Soy desarrollador web...</p>
-        </section>
+    <h1>Hello, I'm AGUILERA SEBASTIÁN</h1>
 
-        <section id="curriculum" class="section">
-          <h1>Currículum</h1>
-          <p>Estudios, experiencia, habilidades...</p>
-        </section>
+    <!-- Contenido -->
+    <main class="content">
+      <section id="about-me" class="section active">
+        <div class="perfil">
+          <div class="descripcion">
+            <p>
+              Soy un desarrollador apasionado especializado en Python y Flask,
+              con un fuerte compromiso en escribir código limpio, mantenible y
+              eficiente.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="proyectos" class="section">
-          <h1>Proyectos</h1>
-          <p>Aquí van tus proyectos destacados.</p>
-        </section>
+      <section id="proyectos" class="section">
+        <h2>Proyectos</h2>
+        <p>Aquí van tus proyectos destacados.</p>
+        <div class="tecnologias">
+          <h2>Tecnologías</h2>
+          <div class="icon-grid">
+            <i class="devicon-python-plain colored"></i>
+            <i class="devicon-flask-original colored"></i>
+            <i class="devicon-postgresql-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+        </div>
+      </section>
 
-        <section id="contacto" class="section">
-          <h1>Contacto</h1>
-          <p>Email, LinkedIn, formulario...</p>
-        </section>
-      </main>
-    </div>
-
+      <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <p>Email, LinkedIn, formulario...</p>
+      </section>
+    </main>
     <footer>
       <p>© 2025 Aguilera Sebastián</p>
     </footer>
