@@ -1,5 +1,6 @@
 .navbar {
   background-color: #0f172a;
+  background-image: url("https://www.transparenttextures.com/patterns/black-linen.png");
   display: flex;
   justify-content: space-between; /* Espacia los elementos: uno a la izquierda y otro a la derecha */
   align-items: center;

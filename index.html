@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/tecnologias.css" />
   </head>
 
   <body>
@@ -25,6 +28,12 @@
         </ul>
       </nav>
     </header>
+
+    <aside class="sidebar">
+      <img src="svg/github-svg.svg" alt="github svg" class="github-svg" />
+      <img src="svg/linkedin-svg.svg" alt="linkedin svg" class="linkedin-svg" />
+      <img src="svg/gmail-svg.svg" alt="gmail svg" class="gmail-svg" />
+    </aside>
 
     <h1>Hello, I'm AGUILERA SEBASTIÁN</h1>
 
@@ -58,9 +67,32 @@
         </div>
       </section>
 
-      <section id="contacto" class="section">
+      <section id="contacto" class="form">
         <h2>Contacto</h2>
-        <p>Email, LinkedIn, formulario...</p>
+        <form class="contact-form">
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tucorreo@gmail.com"
+            required
+          />
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Escribí tu mensaje..."
+            required
+          ></textarea>
+
+          <button type="submit" class="enviar-button">Enviar</button>
+        </form>
       </section>
     </main>
     <footer>
